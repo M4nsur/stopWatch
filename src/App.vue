@@ -69,12 +69,11 @@ export default {
 
 <style scoped>
 .wrapper {
-  background-color: #353638;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
-  padding: 0 30%;
+  padding: 0 25%;
 }
 
 .play {
@@ -142,10 +141,13 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 10px 10px;
+  cursor: pointer;
 }
 
-.btn {
-  cursor: pointer;
+@media (max-width: 1470px) {
+  .wrapper {
+    padding: 0 18%;
+  }
 }
 
 @media (max-width: 1289px) {
@@ -161,12 +163,6 @@ export default {
 }
 
 @media (max-width: 960px) {
-  .wrapper {
-    padding: 0 18%;
-  }
-}
-
-@media (max-width: 767px) {
   .wrapper {
     padding: 0 18%;
   }
